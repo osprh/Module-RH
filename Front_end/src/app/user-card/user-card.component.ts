@@ -71,7 +71,7 @@ export class UserCardComponent implements OnInit {
 		
 				 for(let key3 in data3)
 				 {
-					 this.current_card.photo_src = data3[key3].photo_src;
+					 this.current_card.photo_src = "../../assets/img/person/binji.png" + data3[key3].photo_src;
 					
 				 }
 					
