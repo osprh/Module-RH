@@ -3,6 +3,9 @@ var app = express();
 var serv = require('http').Server(app);
 var mysql = require('mysql');
 
+var my_ip = "192.168.43.159";
+var my_port = 3000;
+
 var con = mysql.createConnection({
   host: "localhost",
   user: "OSP",
@@ -131,7 +134,7 @@ app.get('/get_role/:id',function(req,res){
 
 // -------------------------------------------------
 
-serv.listen(4000,'172.20.10.10'); // Lancement du serveur
+serv.listen(my_port,my_ip); // Lancement du serveur
 
 
 
